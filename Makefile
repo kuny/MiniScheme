@@ -3,9 +3,12 @@
 # Purpose:
 #--------------------------------------------------
 
-.PHONY: all buid run
+.PHONY: all repl buid run
 
 all: build
+
+repl:
+	@dotnet fsi
 
 build:
 	@dotnet build
